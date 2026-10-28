@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0da86eb2-cf80-44d1-a330-15cdf8314e50" name="Changes" comment="commit3">
+    <list default="true" id="0da86eb2-cf80-44d1-a330-15cdf8314e50" name="Changes" comment="commit7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/http_work.py" beforeDir="false" afterPath="$PROJECT_DIR$/http_work.py" afterDir="false" />
     </list>
@@ -97,6 +97,7 @@
     <MESSAGE value="comit1" />
     <MESSAGE value="commit2" />
     <MESSAGE value="commit3" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit3" />
+    <MESSAGE value="commit7" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit7" />
   </component>
 </project>

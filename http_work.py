@@ -49,6 +49,18 @@ while True:
         print("=============================================" + url +"========" + "/E:/other cyber work/move1.jpg")
         if url == '':
             answer = open_files("index.html")
+        elif url =="calculate-next":
+            answer = "HTTP/1.1 200 OK\r\nContent-Length: 1\r\n\r\n5".encode()
+        elif url.split("=")[0] == "calculate-next?num":
+            num=int(url.split("=")[1])
+            num=num+1
+            answer = f"HTTP/1.1 200 OK\r\nContent-Length: {len(str(num))}\r\n\r\n{str(num)}".encode()
+        elif url.split("?")[0] == "calculate-area":
+            num1=url.split("=")[1]
+            num1=num1.split("&")[0]
+            num2=url.split("=")[2]
+            ans=int(num1)*int(num2)/2
+            answer = f"HTTP/1.1 200 OK\r\nContent-Length: {len(str(ans))}\r\n\r\n{str(ans)}".encode()
         elif url in banlist:
             answer = f"HTTP/1.1 403 forbidden file\r\nContent-Length: 0\r\n\r\n".encode()
         elif url in moved_dict:
